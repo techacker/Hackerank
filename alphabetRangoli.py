@@ -15,8 +15,9 @@
 # --------e--------
 
 import string
+# To be able to quickly create a list of alphabets.
 
-
+# Function that actually creates the design.
 def print_rangoli(size):
     alpha = string.ascii_lowercase
     printList = []
