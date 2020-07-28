@@ -15,6 +15,16 @@
 
 import datetime
 
-# Use strptime(date_string, format) method
+def time_delta(t1, t2):
+    # Use strptime(date_string, format) method
+    # datetime.datetime.strptime('TimeStamp String', 'format string')
+    t1 = datetime.datetime.strptime(t1, '%a %d %b %Y %H:%M:%S %z')
+    t2 = datetime.datetime.strptime(t2, '%a %d %b %Y %H:%M:%S %z')
+    return int(abs(datetime.timedelta.total_seconds(t1 - t2)))
 
-print(strptime('Sun 10 May 2015 13:54:36 -0700', %a %d %b %Y %H:%M:%S %z))
+n = int(input())
+for _ in range(n):
+    t1 = input()
+    t2 = input()
+    delta = time_delta(t1, t2)
+    print(delta)
