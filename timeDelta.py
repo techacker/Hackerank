@@ -6,3 +6,15 @@
 # You are given two timestamps of one such post that a user can see on his newsfeed in the following format:
 # Day dd Mon yyyy hh:mm:ss +xxxx
 # Here +xxxx represents the time zone. Your task is to print the absolute difference (in seconds) between them.
+
+# Sample timestamps:
+# Sun 10 May 2015 13:54:36 -0700
+# Sun 10 May 2015 13:54:36 -0000
+# Sat 02 May 2015 19:54:36 +0530
+# Fri 01 May 2015 13:54:36 -0000
+
+import datetime
+
+# Use strptime(date_string, format) method
+
+print(strptime('Sun 10 May 2015 13:54:36 -0700', %a %d %b %Y %H:%M:%S %z))
