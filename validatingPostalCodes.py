@@ -5,7 +5,7 @@ import re
 # 552523  # Here, both 2 and 5 are alternating repetitive digits.
 
 P = input()
-regex_integer_in_range = r'[1-9][0-9]{5}'
+regex_integer_in_range = r'[1-9][0-9]{5}$'
 
 # Use Regex lookahead method:
 # (?=foo) is a positive lookahead...use site like https://regex101.com/ to get more information.
