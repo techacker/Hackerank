@@ -12,6 +12,9 @@
 ''' 
 import re
 
+# Print the text in triple quotes to explain what this program is.
+print(__doc__)
+
 first_multiple_input = input().rstrip().split()
 n = int(first_multiple_input[0])
 m = int(first_multiple_input[1])
