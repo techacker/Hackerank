@@ -14,17 +14,33 @@
 # Fri 01 May 2015 13:54:36 -0000
 
 import datetime
+import math
+import os
+import random
+import re
+import sys
 
 def time_delta(t1, t2):
     # Use strptime(date_string, format) method
     # datetime.datetime.strptime('TimeStamp String', 'format string')
     t1 = datetime.datetime.strptime(t1, '%a %d %b %Y %H:%M:%S %z')
     t2 = datetime.datetime.strptime(t2, '%a %d %b %Y %H:%M:%S %z')
-    return int(abs(datetime.timedelta.total_seconds(t1 - t2)))
+    return str(round(abs(datetime.timedelta.total_seconds(t1 - t2))))
 
-n = int(input())
-for _ in range(n):
-    t1 = input()
-    t2 = input()
-    delta = time_delta(t1, t2)
-    print(delta)
+#n = int(input())
+#for _ in range(n):
+#    t1 = input()
+#    t2 = input()
+#    delta = time_delta(t1, t2)
+#    print(delta)
+
+if __name__ == '__main__':
+    t = int(input())
+    for t_itr in range(t):
+        t1 = input()
+        t2 = input()
+        delta = time_delta(t1, t2)
+        #print(delta)
+        #print(type(delta))
+        print(delta + '\n')
+        # fptr.write(delta + '\n')
